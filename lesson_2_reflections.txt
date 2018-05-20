@@ -1,0 +1,16 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+Using git init when you're in a directory initializes it as a git repository.
+This makes it so that commits can be made and multiple versions of files in the 
+repository can be tracked. It will also allow us to use other git commands such as 
+git checkout or git diff as needed. 
+
+How is the staging area different from the working directory and the repository? 
+What value do you think it offers?
+
+The staging area is intermediate between a working directory and a git repository.
+It allows you to choose which files should be included in a particular commit. 
+Using git add lets you add files to the staging area. Once all the necessary files
+have been chosen they will all be committed in the next commit. This is valuable 
+since it offers the choice of not having to commit every single file in the repository
+each time you make a commit.
