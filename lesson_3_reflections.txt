@@ -10,4 +10,18 @@ stay up-to-date with your remote repository?
 Manually using git pull let's you choose what branch of the remote repository you want
 to pull as well as which branch in the local repository you want it to be added to. 
 When you have multiple branches, experimental versions of a project, and multiple 
-contributors, the freedom that manual pulling provides will be helpful. 
+contributors, the freedom that manual pulling provides will be helpful.
+
+Describe the differences between forks, clones, and branches. When would you use one 
+instead of another? 
+
+A fork is a clone of an existing repository on GitHub servers. Forking a GitHub repository
+makes a copy of it onto your own GitHub page. However this is only on Github's server and 
+not on any local computer of yours. A clone is a copy of any repository, not necessarily on
+GitHub. A GitHub repository can be cloned, in which case it will appear locally on the 
+computer you used to make the clone. Branches are different versions of a project within the 
+same repository. The main or default branch in a git repository is called 'master'. Other
+branches can be made as needed, for example when you want to add a new experimantal feature
+to your code, or someone else wants to make their own version but not have them reflect in 
+the original yet. Branches can be merged using git merge whenever you want the changes made on
+one particular branch to reflect in version from other branches. 
