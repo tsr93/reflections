@@ -25,3 +25,10 @@ branches can be made as needed, for example when you want to add a new experiman
 to your code, or someone else wants to make their own version but not have them reflect in 
 the original yet. Branches can be merged using git merge whenever you want the changes made on
 one particular branch to reflect in version from other branches. 
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+It lets you track the last known state of the remote repository on your local computer when
+you're offline. This will help track changes you've made locally which are yet to be committed
+to the remote. Also when you pull from the remote repository, git will first update the local copy 
+of the remote and then try to merge the updated remote to the local. 
