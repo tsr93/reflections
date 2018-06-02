@@ -3,3 +3,11 @@ When would you want to use a remote repository rather than keeping all your work
 You might wish to use a remote repository when you are a contributor on a project.
 Or you're working from a different computer and don't want to clone the entire 
 repository onto it yet. 
+
+Why might you want to always pull changes manually rather than having Git automatically 
+stay up-to-date with your remote repository?
+
+Manually using git pull let's you choose what branch of the remote repository you want
+to pull as well as which branch in the local repository you want it to be added to. 
+When you have multiple branches, experimental versions of a project, and multiple 
+contributors, the freedom that manual pulling provides will be helpful. 
