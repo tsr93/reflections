@@ -32,3 +32,14 @@ It lets you track the last known state of the remote repository on your local co
 you're offline. This will help track changes you've made locally which are yet to be committed
 to the remote. Also when you pull from the remote repository, git will first update the local copy 
 of the remote and then try to merge the updated remote to the local. 
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would 
+be harder?
+
+Without using Git or GitHub I would prefer to collaborate in person with someone I have decided 
+to work with. If the person lives in another place altogether then I would try to collaborate
+over email only. This would make communication direct without having to go through GitHub first. 
+But at the same time it would make keeping track of different versions and updates to the project
+harder, and it would be difficult to know what areas of the code have been changed by someone 
+unless they specify the lines changed each time. 
+
