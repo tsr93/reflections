@@ -43,3 +43,13 @@ But at the same time it would make keeping track of different versions and updat
 harder, and it would be difficult to know what areas of the code have been changed by someone 
 unless they specify the lines changed each time. 
 
+When would you want to make changes in a separate branch rather than directly in master? What 
+benefits does each approach have?
+
+When you add changes which you want other contributors to check before comitting them to master,
+it's always a good idea to start with a separate branch and then providing a pull request so 
+that others can go through the changes you've made before the remote master is updated. 
+However, making changes directly into master makes it a bit easier when someone else also made 
+changes to the same portion of the code. This way you don't have two versions of the local 
+repository, the local master and the new separate branch, that need to be updated to the current
+remote state. 
