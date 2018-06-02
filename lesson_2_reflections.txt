@@ -1,16 +1,56 @@
 What happens when you initialize a repository? Why do you need to do it?
 
 Using git init when you're in a directory initializes it as a git repository.
-This makes it so that commits can be made and multiple versions of files in the 
-repository can be tracked. It will also allow us to use other git commands such as 
-git checkout or git diff as needed. 
+This makes it so that commits can be made and multiple versions of files in 
+the repository can be tracked. It will also allow us to use other git commands 
+such as git checkout or git diff as needed. 
 
-How is the staging area different from the working directory and the repository? 
-What value do you think it offers?
+How is the staging area different from the working directory and the 
+repository? What value do you think it offers?
 
-The staging area is intermediate between a working directory and a git repository.
-It allows you to choose which files should be included in a particular commit. 
-Using git add lets you add files to the staging area. Once all the necessary files
-have been chosen they will all be committed in the next commit. This is valuable 
-since it offers the choice of not having to commit every single file in the repository
-each time you make a commit.
+The staging area is intermediate between a working directory and a git 
+repository. It allows you to choose which files should be included in a 
+particular commit. Using git add lets you add files to the staging area. 
+Once all the necessary files have been chosen they will all be committed 
+in the next commit. This is valuable since it offers the choice of not 
+having to commit every single file in the repository each time you make 
+a commit.
+
+How can you use the staging area to make sure you have one commit per 
+logical change?
+ 
+Only add the file with changes you wish to reflect in the next commit 
+to the staging area.
+
+What are some situations when branches would be helpful in keeping your 
+history organized? How would branches help?
+
+Branches would be especially helpful when you wish to add an experimental
+new feature to your code. You do not want this change to become official, 
+Creating a branch allows you to try out such a change without affecting 
+the master version. A branch can be checked out using git checkout. 
+
+How do the diagrams help you visualize the branch structure?
+
+Drawing the diagrams helps you understand what branches there are and
+at which particular commit they were first made. 
+
+What is the result of merging two branches together? Why do we represent 
+it in the diagram the way we do?
+
+Using git merge merges a specified branch into the branch that was 
+currently checked out. It makes a new commit, keeping changes made up 
+to the most recent commits on both branches. This new commit has two 
+parent commits, the two most recent commits from the branches that 
+were merged. (A merge can be performed on multuple branches; merge commits
+can have multiple parents). The original branch being merged still exists,
+along with all its commits. 
+
+What are the pros and cons of Git’s automatic merging vs. always doing 
+merges manually?
+
+The automatic merging can be very time saving especially when large files
+are being merged and there would be a lot of lines to go through manually.
+It also points out when same sections of code were changed on two different
+commits being merged, making sure that the user is notified and can check
+which version of the code to keep, or how to best resolve the conflict. 
